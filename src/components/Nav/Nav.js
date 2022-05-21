@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.css';
 import Logo from '../../images/logo.svg';
 
 const Nav = () => {
+	const [activeNav, setActiveNav] = useState(false);
+	const [activeNavLinks, setActiveNavLinks] = useState(false);
+	const [activeNavBg, setActiveNavBg] = useState(false);
+	const [activeNavBgAnimation, setActiveNavBgAnimation] = useState(false);
+	const openMenu = () => {
+		setActiveNav(!activeNav);
+		setActiveNavLinks(!activeNavLinks);
+		setActiveNavBg(!activeNavBg);
+		setActiveNavBgAnimation(!activeNavBgAnimation);
+	};
 	return (
 		<header className='header'>
+			<div
+				className={`${activeNavBg ? 'active-nav-bg' : 'nav-bg'} ${
+					activeNavBgAnimation ? 'fade-in' : 'fade-out'
+				}`}></div>
 			<nav className='nav'>
 				<a className='logo' href='/'>
 					<img src={Logo} alt='logo' />
 				</a>
-				<a className='hamburger-nav' href='#'>
-					<span className='hamburger-nav-bars bar-one'></span>
-					<span className='hamburger-nav-bars bar-two'></span>
-					<span className='hamburger-nav-bars bar-three'></span>
-				</a>
-				<ul className='nav-links'>
+				<div
+					className={`hamburger-nav ${activeNav ? 'active-hamburger-nav' : ''}`}
+					onClick={openMenu}>
+					<div className='hamburger-nav-bars bar-one'></div>
+					<div className='hamburger-nav-bars bar-two'></div>
+					<div className='hamburger-nav-bars bar-three'></div>
+				</div>
+				<ul className={`nav-links ${activeNavLinks ? 'active-nav-links' : ''}`}>
 					<li>
 						<a className='single-nav-link' href='/'>
 							Home

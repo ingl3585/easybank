@@ -7,6 +7,8 @@
 - White: hsl(0, 0%, 100%) */
 
 .nav {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,10 +25,23 @@
     height: 2px;
     width: 26px;
     background-color: hsl(233, 26%, 24%);
+    transition: 0.20s all ease-in-out;
 }
 
 .hamburger-nav-bars:not(:last-child) {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.active-hamburger-nav .bar-one {
+    transform: translateY(8px) rotateZ(45deg);
+}
+
+.active-hamburger-nav .bar-two {
+    opacity: 0;
+}
+
+.active-hamburger-nav .bar-three {
+    transform: translateY(-6px) rotateZ(-45deg);
 }
 
 .nav-links {
@@ -35,6 +50,51 @@
 
 .nav-btn {
     display: none;
+}
+
+.active-nav-bg {
+    position: fixed;
+    top: 3.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+}
+
+.fade-in {
+    animation: fade-in 0.20s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.fade-out {
+    animation: fade-out 0.20s ease-in-out forwards;
 }
 
 @media screen and (min-width: 64em) {
@@ -66,7 +126,7 @@
         left: 0;
         right: 0;
         bottom: -37px;
-        transition: 0.3s ease-in-out;
+        transition: 0.28s ease-in-out;
     }
 
     .nav-links li a:hover::after {
@@ -82,7 +142,7 @@
 
     .single-nav-link:hover {
         color: hsl(233, 26%, 24%);
-        transition: 0.3s ease-in-out;
+        transition: 0.28s ease-in-out;
     }
 
     .nav-btn {
@@ -99,6 +159,6 @@
 
     .nav-btn:hover {
         opacity: 0.75;
-        transition: 0.3s ease-in-out;
+        transition: 0.28s ease-in-out;
     }
 }
