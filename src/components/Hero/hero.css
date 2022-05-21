@@ -28,6 +28,7 @@
 
 .hero-text {
     text-align: center;
+    padding: 2.25rem 1.5rem;
 }
 
 .hero-text h1 {
@@ -40,7 +41,6 @@
 .hero-text p {
     line-height: 1.5;
     margin-bottom: 2.25rem;
-    padding: 0 1.5rem;
 }
 
 .hero-btn {
@@ -54,4 +54,36 @@
     cursor: pointer;
     font-weight: 700;
     margin: 0 auto;
+}
+
+.hero-btn:hover {
+    opacity: 0.75;
+    transition: 0.28s ease-in-out;
+}
+
+@media screen and (min-width: 64em) {
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-img {
+        flex: 3;
+        order: 2;
+        min-height: 41rem;
+        background-image: url('../../images/bg-intro-desktop.svg');
+        background-position: left center;
+        max-width: 1113px;
+        margin: auto;
+    }
+
+    .hero-img::before {
+        
+    }
+
+    .hero-text {
+        flex: 2;
+        order: 1;
+        text-align: left;
+    }
 }
