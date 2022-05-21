@@ -1,0 +1,56 @@
+/* - Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+.hero-img {
+    position: relative;
+    background-image: url('../../images/bg-intro-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+}
+
+.hero-img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../images/image-mockups.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+}
+
+.hero-text p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+}
+
+.hero-btn {
+    display: block;
+    padding: 0.875rem 2.1875rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0 auto;
+}
