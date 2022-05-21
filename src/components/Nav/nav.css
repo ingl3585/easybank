@@ -51,7 +51,8 @@
 .active-nav-links-container {
     z-index: 2;
     display: block;
-    position: fixed;
+    position: absolute;
+    height: 30vh;
     top: 4.5rem;
     right: 1rem;
     bottom: 28rem;
@@ -77,6 +78,7 @@
     font-weight: 500;
     color: hsl(233, 26%, 24%);
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 .nav-btn {
@@ -141,6 +143,8 @@
     .active-nav-links-container {
         display: block;
         position: relative;
+        height: 0;
+        width: 0;
         top: 0;
         right: 0;
         bottom: 0;
