@@ -8,7 +8,7 @@ const Nav = () => {
 	const [activeNavLinks, setActiveNavLinks] = useState(false);
 	const [activeNavBg, setActiveNavBg] = useState(false);
 	const [activeNavBgAnimation, setActiveNavBgAnimation] = useState(false);
-	const openMenu = () => {
+	const toggleMobileNavMenu = () => {
 		setActiveNav(!activeNav);
 		setActiveNavLinksContainer(!activeNavLinksContainer);
 		setActiveNavLinks(!activeNavLinks);
@@ -27,15 +27,15 @@ const Nav = () => {
 				</a>
 				<div
 					className={`hamburger-nav ${activeNav ? 'active-hamburger-nav' : ''}`}
-					onClick={openMenu}>
+					onClick={toggleMobileNavMenu}>
 					<div className='hamburger-nav-bars bar-one'></div>
 					<div className='hamburger-nav-bars bar-two'></div>
 					<div className='hamburger-nav-bars bar-three'></div>
 				</div>
 				<div
-					className={`nav-links-container ${
-						activeNav ? 'active-nav-links-container' : ''
-					} ${activeNavBgAnimation ? 'fade-in' : ''}`}>
+					className={`${
+						activeNav ? 'active-nav-links-container' : 'nav-links-container'
+					} ${activeNavBgAnimation ? 'fade-in' : 'fade-out'}`}>
 					<ul
 						className={`nav-links ${activeNavLinks ? 'active-nav-links' : ''}`}>
 						<li>

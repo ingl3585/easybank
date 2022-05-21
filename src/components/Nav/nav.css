@@ -214,4 +214,12 @@
     .active-nav-bg {
         display: none;
     }
+    
+    .fade-in {
+        animation: none;
+    }
+    
+    .fade-out {
+        animation: none;
+    }
 }
