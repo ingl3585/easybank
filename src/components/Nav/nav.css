@@ -54,7 +54,7 @@
     display: block;
     position: absolute;
     height: 30vh;
-    top: 7.25rem;
+    top: 4.5rem;
     right: 1rem;
     bottom: 28rem;
     left: 1rem;
@@ -178,6 +178,7 @@
         right: 0;
         bottom: -37px;
         transition: 0.28s ease-in-out;
+        border-radius: 3.125rem;
     }
 
     .nav-links li a:hover::after {
