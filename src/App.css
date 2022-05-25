@@ -25,4 +25,5 @@ body {
     font-weight: 300;
     color: hsl(233, 8%, 62%);
     line-height: 1.3;
+    overflow-x: hidden;
 }
