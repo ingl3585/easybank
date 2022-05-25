@@ -133,6 +133,12 @@
 }
 
 @media screen and (min-width: 64em) {
+    .nav {
+        max-width: 80rem;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
     .hamburger-nav {
         display: none;
     }
@@ -153,14 +159,11 @@
     }
 
     .nav-links {
+        width: 30vw;
         display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
         padding: 0;
         list-style: none;
-    }
-
-    .nav-links li:not(:last-child) {
-        margin-right: 32px;
     }
 
     .nav-links li a {
@@ -186,7 +189,6 @@
     }
 
     .single-nav-link {
-        margin: auto;
         font-size: 0.875rem;
         color: hsl(233, 8%, 62%);
         text-decoration: none;
