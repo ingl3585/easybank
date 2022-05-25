@@ -10,40 +10,42 @@ import './footer.css';
 const Footer = () => {
 	return (
 		<footer className='footer'>
-			<a href='#/' className='footer-logo'>
-				<img src={Logo} alt='logo' />
-			</a>
-			<div className='social-links'>
-				<a href='#/'>
-					<img src={Facebook} alt='facebook-logo' />
+			<div className='footer-container'>
+				<a href='#/' className='footer-logo'>
+					<img src={Logo} alt='logo' />
 				</a>
-				<a href='#/'>
-					<img src={YouTube} alt='youtube-logo' />
-				</a>
-				<a href='#/'>
-					<img src={Twitter} alt='twitter-logo' />
-				</a>
-				<a href='#/'>
-					<img src={Pinterest} alt='pinterest-logo' />
-				</a>
-				<a href='#/'>
-					<img src={Instagram} alt='instagram-logo' />
-				</a>
-			</div>
-			<div className='footer-links column-one'>
-				<a href='#/'>About Us</a>
-				<a href='#/'>Contact</a>
-				<a href='#/'>Blog</a>
-			</div>
-			<div className='footer-links column-two'>
-				<a href='#/'>Careers</a>
-				<a href='#/'>Support</a>
-				<a href='#/'>Privacy Policy</a>
-			</div>
-			<div className='footer-bottom'>
-				<button className='footer-btn'>Request Invite</button>
-				<div className='footer-copyright'>
-					&copy; Easybank. All Rights Reserved
+				<div className='social-links'>
+					<a href='#/'>
+						<img src={Facebook} alt='facebook-logo' />
+					</a>
+					<a href='#/'>
+						<img src={YouTube} alt='youtube-logo' />
+					</a>
+					<a href='#/'>
+						<img src={Twitter} alt='twitter-logo' />
+					</a>
+					<a href='#/'>
+						<img src={Pinterest} alt='pinterest-logo' />
+					</a>
+					<a href='#/'>
+						<img src={Instagram} alt='instagram-logo' />
+					</a>
+				</div>
+				<div className='footer-links column-one'>
+					<a href='#/'>About Us</a>
+					<a href='#/'>Contact</a>
+					<a href='#/'>Blog</a>
+				</div>
+				<div className='footer-links column-two'>
+					<a href='#/'>Careers</a>
+					<a href='#/'>Support</a>
+					<a href='#/'>Privacy Policy</a>
+				</div>
+				<div className='footer-bottom'>
+					<button className='footer-btn'>Request Invite</button>
+					<div className='footer-copyright'>
+						&copy; Easybank. All Rights Reserved
+					</div>
 				</div>
 			</div>
 		</footer>

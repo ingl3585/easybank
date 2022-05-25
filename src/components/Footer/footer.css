@@ -59,7 +59,62 @@
     margin: 0 auto 1.875rem auto;
 }
 
+.footer-btn:hover {
+    opacity: 0.75;
+    transition: 0.28s ease-in-out;
+}
+
 .footer-copyright {
     font-size: 1rem;
     color: hsl(233, 8%, 62%);
+}
+
+@media screen and (min-width: 64em) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "logo linksone linkstwo cta"
+        "social linksone linkstwo cta";
+        justify-items: start;
+        text-align: left;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+
+    .footer-logo {
+        grid-area: logo;
+        margin: auto 0;
+    }
+
+    .social-links {
+        grid-area: social;
+        margin: auto 0;
+    }
+
+    .column-one {
+        grid-area: linksone;
+        margin: auto;
+    }
+
+    .column-two {
+        grid-area: linkstwo;
+        margin: auto;
+    }
+
+    .footer-bottom {
+        grid-area: cta;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer-btn {
+        margin: 1rem 0 0 0;
+    }
+    
 }
