@@ -1,5 +1,6 @@
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
+import Main from './components/Main/Main';
 import './App.css';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
 		<div className='App'>
 			<Nav />
 			<Hero />
+			<Main />
 		</div>
 	);
 };

@@ -1,0 +1,71 @@
+/* - Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+.features {
+    padding: 0 1rem;
+}
+
+.features h2 {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 1.875rem;
+}
+
+.feature-title {
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+}
+
+@media screen and (min-width: 40em) {
+    .feature-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        flex: 0 0 50%;
+        padding: 0.9375rem 0;
+    }
+
+    .feature-item div {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .features {
+        max-width: 80rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    .features h2 {
+        font-size: 2.25rem;
+    }
+
+    .features p {
+        line-height: 1.5;
+    }
+
+    .feature-item {
+        flex: 1;
+        padding: 0.9375rem;
+    }
+
+    .feature-item div {
+        margin: 2rem 0;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
