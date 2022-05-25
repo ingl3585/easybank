@@ -1,0 +1,103 @@
+/* - Dark Blue: hsl(233, 26%, 24%)
+- Lime Green: hsl(136, 65%, 51%)
+- Bright Cyan: hsl(192, 70%, 51%)
+- Grayish Blue: hsl(233, 8%, 62%)
+- Light Grayish Blue: hsl(220, 16%, 96%)
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%) */
+
+.articles {
+    padding: 0 1.5rem;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.article-intro h2 {
+    color: hsl(233, 26%, 24%);
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+.article-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.article-item {
+    text-decoration: none;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.175s all ease-in-out;
+}
+
+.article-item:hover {
+    transform: scale(1.05);
+}
+
+.article-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 12.5rem;
+}
+
+.currency {
+    background-image: url('../../images/image-currency.jpg');
+}
+
+.dining {
+    background-image: url('../../images/image-restaurant.jpg');
+}
+
+.plane {
+    background-image: url('../../images/image-plane.jpg');
+}
+
+.confetti {
+    background-image: url('../../images/image-confetti.jpg');
+}
+
+.article-text {
+    background-color: white;
+    color: hsl(233, 8%, 62%);
+    padding: 1.875rem 1.875rem 2rem 1.875rem;
+}
+
+.article-author {
+    font-size: 0.625rem;
+}
+
+.article-title {
+    font-size: 1.0625rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: hsl(233, 26%, 24%);
+}
+
+.article-desc {
+    font-size: 0.8125rem;
+}
+
+@media screen and (min-width: 40em) {
+    .article-layout {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .article-text {
+        padding: 1.5625rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .articles {
+        max-width: 80rem;
+        margin: 2rem auto 2rem auto;
+    }
+    .article-layout {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}

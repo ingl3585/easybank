@@ -7,10 +7,30 @@
 - White: hsl(0, 0%, 100%) */
 
 .features {
-    padding: 0 1rem;
+    text-align: center;
+    margin: 5rem 0;
+    padding: 0 1.5rem;
 }
 
-.features h2 {
+.feature-intro h2 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.feature-intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.feature-item {
+    margin: 4rem 0;
+}
+
+.feature-item div {
+    margin: 1rem 0;
+}
+
+.feature-intro h2 {
     color: hsl(233, 26%, 24%);
     font-weight: 300;
     font-size: 1.875rem;
@@ -21,15 +41,31 @@
     color: hsl(233, 26%, 24%);
 }
 
+.feature-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 @media screen and (min-width: 40em) {
-    .feature-grid {
+    .features {
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .feature-intro h2 {
+        width: 100%;
+    }
+    
+    .feature-layout {
         display: flex;
         flex-wrap: wrap;
     }
 
     .feature-item {
+        text-align: center;
         flex: 0 0 50%;
-        padding: 0.9375rem 0;
+        margin: 0;
+        padding: 1rem 0.50rem;
     }
 
     .feature-item div {
@@ -40,15 +76,19 @@
 @media screen and (min-width: 64em) {
     .features {
         max-width: 80rem;
-        margin: 0 auto 2rem auto;
+        margin: 2rem auto 2rem auto;
     }
 
-    .features h2 {
+    .feature-intro {
+        width: 50%;
+    }
+
+    .feature-intro h2 {
         font-size: 2.25rem;
     }
 
-    .features p {
-        line-height: 1.5;
+    .feature-intro p {
+        font-size: 1.25rem;
     }
 
     .feature-item {
@@ -64,7 +104,8 @@
         font-size: 1.5rem;
     }
 
-    .feature-description {
+    .feature-desc {
+        text-align: left;
         font-size: 1rem;
         line-height: 1.5;
     }
