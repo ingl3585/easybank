@@ -39,27 +39,27 @@ const Nav = () => {
 					<ul
 						className={`nav-links ${activeNavLinks ? 'active-nav-links' : ''}`}>
 						<li>
-							<a className='single-nav-link' href='/'>
+							<a className='single-nav-link' href='#/'>
 								Home
 							</a>
 						</li>
 						<li>
-							<a className='single-nav-link' href='/'>
+							<a className='single-nav-link' href='#/'>
 								About
 							</a>
 						</li>
 						<li>
-							<a className='single-nav-link' href='/'>
+							<a className='single-nav-link' href='#/'>
 								Contact
 							</a>
 						</li>
 						<li>
-							<a className='single-nav-link' href='/'>
+							<a className='single-nav-link' href='#/'>
 								Blog
 							</a>
 						</li>
 						<li>
-							<a className='single-nav-link' href='/'>
+							<a className='single-nav-link' href='#/'>
 								Careers
 							</a>
 						</li>
