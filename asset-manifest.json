@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/easybank/static/css/main.b3a23bc0.css",
-    "main.js": "/easybank/static/js/main.8ac84121.js",
+    "main.css": "/easybank/static/css/main.f3459a78.css",
+    "main.js": "/easybank/static/js/main.90604252.js",
     "static/media/image-currency.jpg": "/easybank/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
     "static/media/image-restaurant.jpg": "/easybank/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
     "static/media/image-mockups.png": "/easybank/static/media/image-mockups.48d35b175fe3d36de4ee.png",
@@ -15,17 +15,12 @@
     "static/media/bg-intro-desktop.svg": "/easybank/static/media/bg-intro-desktop.8be308fd4ce79bd32a09.svg",
     "static/media/bg-intro-mobile.svg": "/easybank/static/media/bg-intro-mobile.c2ed38d05001e62c1c09.svg",
     "static/media/icon-online.svg": "/easybank/static/media/icon-online.b0622b15741418e9efe3805d1b2ac26b.svg",
-    "static/media/icon-instagram.svg": "/easybank/static/media/icon-instagram.54d3962efa2aa6085b776d1816557a6a.svg",
-    "static/media/icon-pinterest.svg": "/easybank/static/media/icon-pinterest.45264b1d1cdf7f0c420d573853779f7b.svg",
-    "static/media/icon-twitter.svg": "/easybank/static/media/icon-twitter.01a8907dd0beb126cff27d505c31be52.svg",
     "index.html": "/easybank/index.html",
-    "static/media/icon-youtube.svg": "/easybank/static/media/icon-youtube.7d6960fbb0c4831f7c667012f0b102d2.svg",
-    "static/media/icon-facebook.svg": "/easybank/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
-    "main.b3a23bc0.css.map": "/easybank/static/css/main.b3a23bc0.css.map",
-    "main.8ac84121.js.map": "/easybank/static/js/main.8ac84121.js.map"
+    "main.f3459a78.css.map": "/easybank/static/css/main.f3459a78.css.map",
+    "main.90604252.js.map": "/easybank/static/js/main.90604252.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3a23bc0.css",
-    "static/js/main.8ac84121.js"
+    "static/css/main.f3459a78.css",
+    "static/js/main.90604252.js"
   ]
 }
